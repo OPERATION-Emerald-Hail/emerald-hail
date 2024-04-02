@@ -9,7 +9,7 @@ public class Item
     public decimal Price { get; set; }
     public List<Rating> Ratings { get; set; } = new List<Rating>();
 
-    public Item(int id, string name, string description, string brand, decimal price)
+    public Item(string name, string description, string brand, decimal price)
     {
         if(string.IsNullOrWhiteSpace(name))
         {
@@ -31,7 +31,6 @@ public class Item
             throw new ArgumentException("Price cannot be negative or 0!");
         }
 
-        Id = id;
         Name = name;
         Description = description;
         Brand = brand;
