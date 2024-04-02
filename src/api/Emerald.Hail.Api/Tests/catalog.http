@@ -9,3 +9,16 @@ GET http://localhost:5191/api/catalog/42 HTTP/1.1
 
 ### should return 404
 GET http://localhost:5191/api/catalog/test HTTP/1.1
+
+
+
+
+POST http://localhost:5191/api/catalog HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Test",
+    "description": "Test description",
+    "brand": "Test brand",
+    "price": 10.0
+}

@@ -37,6 +37,50 @@ namespace Emerald.Hail.Api.Controllers
             return Ok(item);
         }
 
+
+        // [HttpPost]
+        // public IActionResult CreateItem(Item item)
+        // {
+        //     return CreatedAtActon(nameof(GetItem), new { id = 42 }, item);
+        // }
+
+        [HttpPost("{id:int}/ratings")]
+        public IActionResult AddRating(int id, Rating rating)
+        {
+            return Ok();
+        }
+
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateItem(int id, Item item)
+        {
+            return NoContent();
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteItem(int id)
+        {
+            return NoContent();
+        }
+
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateItem(int id, Item item)
+        {
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            var existingItem = _context.Items.Find(id);
+            if (existingItem == null)
+            {
+                return NotFound();
+            }
+
+            _context.Entry(existingItem).CurrentValues.SetValues(item);
+            _context.SaveChanges();
+            return Ok(item);
+        }
+
     }
 
 
