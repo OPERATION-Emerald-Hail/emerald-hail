@@ -61,12 +61,34 @@ namespace Emerald.Hail.Api.Controllers
         [HttpPut("{id:int}")]
         public IActionResult UpdateItem(int id, Item item)
         {
-            return NoContent();
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            var existingItem = _context.Items.Find(id);
+            if (existingItem == null)
+            {
+                return NotFound();
+            }
+
+            _context.Entry(existingItem).CurrentValues.SetValues(item);
+            _context.SaveChanges();
+            return Ok(item);
         }
 
         [HttpDelete("{id:int}")]
         public IActionResult DeleteItem(int id)
         {
+
+            var item = _context.Items.Find(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            _context.Items.Remove(item);
+            _context.SaveChanges();
             return NoContent();
         }
 
