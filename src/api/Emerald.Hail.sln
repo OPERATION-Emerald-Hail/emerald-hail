@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emerald.Hail.Api", "Emerald
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emerald.Hail.Domain", "Emerald.Hail.Domain\Emerald.Hail.Domain.csproj", "{6B6CB3AF-1B6C-4948-8809-CD63EB3C1E5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emerald.Hail.Data", "Emerald.Hail.Data\Emerald.Hail.Data.csproj", "{FC9879ED-19CF-4583-BBD0-3F564FDC04A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6B6CB3AF-1B6C-4948-8809-CD63EB3C1E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B6CB3AF-1B6C-4948-8809-CD63EB3C1E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B6CB3AF-1B6C-4948-8809-CD63EB3C1E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9879ED-19CF-4583-BBD0-3F564FDC04A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9879ED-19CF-4583-BBD0-3F564FDC04A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9879ED-19CF-4583-BBD0-3F564FDC04A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9879ED-19CF-4583-BBD0-3F564FDC04A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
