@@ -222,3 +222,6 @@ C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\obj\Debug\net8.0\refin
 C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\obj\Debug\net8.0\Emerald.Hail.Domain.Tests.pdb
 C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\obj\Debug\net8.0\Emerald.Hail.Domain.Tests.genruntimeconfig.cache
 C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\obj\Debug\net8.0\ref\Emerald.Hail.Domain.Tests.dll
+C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Emerald.Hail.Domain.Tests
+C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\bin\Debug\net8.0\Emerald.Hail.Domain.dll
+C:\Workspace\emerald-hail\tests\Emerald.Hail.Domain.Tests\bin\Debug\net8.0\Emerald.Hail.Domain.pdb
