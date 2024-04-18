@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Emerald.Hail.Domain.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf0bc228aee41fea355bacd601680721d0e775a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b12c8d3638ca3e855ec5b64aec3033c7d60a69a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Emerald.Hail.Domain.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Emerald.Hail.Domain.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
