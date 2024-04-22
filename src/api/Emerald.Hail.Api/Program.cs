@@ -11,6 +11,16 @@ builder.Services.AddDbContext<StoreContext>(options =>
     m => m.MigrationsAssembly("Emerald.Hail.Api"));
 });
 
+builder.Services.AddCors(options => 
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:5173")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+
 builder.Services.AddSwaggerGen(c => 
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Emerald Hail API", Version = "v1" });
@@ -23,6 +33,7 @@ app.UseSwaggerUI(c =>
 { 
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Emerald Hail API V1");
 });
+app.UseCors();
 
 app.MapControllers();
 
